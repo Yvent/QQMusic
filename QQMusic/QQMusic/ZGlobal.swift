@@ -8,14 +8,8 @@
 
 import Foundation
 import UIKit
-//import RealmSwift
 
-
-
-//let infoDictionary = NSBundle.mainBundle().infoDictionary
-//let currentAppVersion = infoDictionary!["CFBundleShortVersionString"] as! String
-
-
+let NAVBC: UIColor = RGB(58, G: 193, B: 126)
 
 let CURRENTVERSION = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
 
@@ -24,6 +18,7 @@ let ScreenWidth = UIScreen.main.bounds.width
 let ScreenHeight = UIScreen.main.bounds.height
 
 func AdaptationHeight(_ height: CGFloat) -> CGFloat {
+    
     return CGFloat(ScreenHeight/667) * height
 }
 func AdaptationWidth(_ width: CGFloat) -> CGFloat {
@@ -76,14 +71,14 @@ func GetGradientLayer(_ top: UIColor, bottom: UIColor) -> CAGradientLayer{
     return gradientLayer
 }
 
-func GetImageView(imageName: String? = nil, BackC: UIColor? = nil) -> UIImageView{
-    let  imageV = UIImageView()
-    if imageName != nil {
-        imageV.image = UIImage(named: imageName!)
-    }
-    imageV.backgroundColor = BackC
-    return imageV
-}
+//func GetImageView(imageName: String? = nil, BackC: UIColor? = nil) -> UIImageView{
+//    let  imageV = UIImageView()
+//    if imageName != nil {
+//        imageV.image = UIImage(named: imageName!)
+//    }
+//    imageV.backgroundColor = BackC
+//    return imageV
+//}
 
 /// 是否登录
 let USER_IS_LOGINED = "USER_IS_LOGINED"
@@ -159,8 +154,6 @@ let SuccessStatusCode = 200
 let DownloadedFolderName = "WAVE_Downloaded"
 
 
-//计步器
-let FPS: Int = 80
 //歌手cell的宽
 let  SingerCW = (ScreenWidth)/4
 //歌手cell的高

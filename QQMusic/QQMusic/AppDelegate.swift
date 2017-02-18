@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //        let mainVC = MainVC()
         
-        self.window?.rootViewController = MainVC()
+        self.window?.rootViewController = SuperHomeVC()
         self.window?.makeKeyAndVisible()
         
         return true

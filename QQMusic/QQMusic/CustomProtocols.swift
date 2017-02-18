@@ -14,6 +14,8 @@ protocol ZYWBackViewDelegate: class {
 
     func zywdidleftitem()
     func zywdidrightitem()
+    func zywdidcenterleftitem()
+    func zywdidcenterrightitem()
     func zywsetBackView(backView: UIView)}
 
 extension ZYWBackViewDelegate where Self: UIViewController{
@@ -22,6 +24,12 @@ extension ZYWBackViewDelegate where Self: UIViewController{
     }
     func zywdidrightitem() {
         print("Click rightitem")
+    }
+    func zywdidcenterleftitem() {
+        print("Click centerleftitem")
+    }
+    func zywdidcenterrightitem() {
+        print("Click centerrightitem")
     }
     func zywsetBackView(backView: UIView) {
         self.view.addSubview(backView)
@@ -35,158 +43,6 @@ extension ZYWBackViewDelegate where Self: UIViewController{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-//MARK: about CustomBackview====================
-protocol LeftBackview {
-    var BackView: UIView! { get set }
-    var LeftBtn: UIButton! { get set }
-    var TitleLabel: UILabel! { get set }
-    
-    func setLeftBackview(title: String?,leftTitle: String?)
-}
-
-extension LeftBackview where Self: UIViewController {
-    func setLeftBackview(title: String?,leftTitle: String?) {
-        
-        BackView.backgroundColor = UIColor.black
-        LeftBtn.setTitle(leftTitle, for: .normal)
-        
-        TitleLabel.text = title
-        TitleLabel.textAlignment = .center
-        TitleLabel.textColor = UIColor.white
-        
-        view.addSubview(BackView)
-        view.addSubviews([LeftBtn,TitleLabel])
-        BackView.snp.makeConstraints { (make) in
-            make.left.equalTo(view)
-            make.top.equalTo(view)
-            make.right.equalTo(view)
-            make.height.equalTo(64)
-        }
-        LeftBtn.snp.makeConstraints { (make) in
-            make.left.equalTo(BackView).offset(10)
-            make.top.equalTo(BackView).offset(20)
-            make.width.equalTo(44)
-            make.height.equalTo(44)
-        }
-        TitleLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(BackView).offset(20)
-            make.centerX.equalTo(BackView.snp.centerX)
-            make.width.equalTo(AdaptationWidth(200))
-            make.bottom.equalTo(BackView)
-        }
-        
-    }
-}
-protocol CustomBackview: LeftBackview {
-    var RightBtn: UIButton! { get set }
-}
-extension CustomBackview where Self: UIViewController {
-    func setBackview(title: String?, leftTitle: String?,rightTitle: String?) {
-        self.setLeftBackview(title: title, leftTitle: leftTitle)
-        RightBtn.setTitle(rightTitle, for: .normal)
-        view.addSubview(RightBtn)
-        RightBtn.snp.makeConstraints { (make) in
-            make.right.equalTo(BackView).offset(-10)
-            make.top.equalTo(BackView).offset(20)
-            make.width.equalTo(44)
-            make.height.equalTo(44)
-        }
-    }
-}
-
-//MARK: about CustomUI====================
-protocol TitlePresentable {
-    var titleLabel: UILabel! { get set }
-    func setTitle(title: String?,tColor: UIColor?,tSize: CGFloat)
-}
-extension TitlePresentable {
-    func setTitle(title: String? = nil,tColor: UIColor?,tSize: CGFloat) {
-        titleLabel.text = title
-        titleLabel.textColor = tColor
-        titleLabel.font = UIFont.systemFont(ofSize: tSize)
-    }
-}
-
-protocol SubTitlePresentable {
-    var subtitleLabel: UILabel! { get set }
-    func setSubTitle(title: String?,tColor: UIColor?,tSize: CGFloat)
-}
-extension SubTitlePresentable {
-    func setSubTitle(title: String? = nil,tColor: UIColor?,tSize: CGFloat) {
-        subtitleLabel.text = title
-        subtitleLabel.textColor = tColor
-        subtitleLabel.font = UIFont.systemFont(ofSize: tSize)
-    }
-   }
-
-protocol TwoSubTitlePresentable {
-    var twoSubtitleLabel: UILabel! { get set }
-    func setTwoSubTitle(title: String?,tColor: UIColor?,tSize: CGFloat)
-}
-extension TwoSubTitlePresentable {
-    func setTwoSubTitle(title: String? = nil,tColor: UIColor?,tSize: CGFloat) {
-        twoSubtitleLabel.text = title
-        twoSubtitleLabel.textColor = tColor
-        twoSubtitleLabel.font = UIFont.systemFont(ofSize: tSize)
-    }
-}
-
-protocol TextFieldPresentable {
-    var textField: UITextField! { get set }
-    func setTextField(placeholder: String?)
-}
-extension TextFieldPresentable {
-    func setTextField(placeholder: String? = nil) {
-        textField.placeholder = placeholder
-    }
-}
-
-protocol HeadImageBtnPresentable {
-    var headImageBtn: UIButton { get set }
-    func setHeadImageBtn(title: String?, named: String?, radius: CGFloat?,bColor: UIColor?,tColor: UIColor?)
-}
-
-extension HeadImageBtnPresentable {
-    func setHeadImageBtn(title: String? = nil, named: String? = nil, radius: CGFloat? = nil,bColor: UIColor? = nil,tColor: UIColor? = nil) {
-        if named != nil {headImageBtn.setImage(UIImage(named: named!), for: .normal)}
-        headImageBtn.setTitle(title, for: .normal)
-        headImageBtn.setTitleColor(tColor, for: .normal)
-        headImageBtn.backgroundColor = bColor
-        headImageBtn.contentMode = .scaleAspectFill
-        headImageBtn.clipsToBounds = true
-        headImageBtn.layer.cornerRadius = radius == nil ? 0:radius!
-        headImageBtn.layer.masksToBounds = true
-    }
-}
-
-protocol SubBtnPresentable {
-    var subBtn: UIButton! { get set }
-    func setSubBtn(title: String?, named: String?, radius: CGFloat?,bColor: UIColor?,tColor: UIColor?)
-}
-
-extension SubBtnPresentable {
-    func setSubBtn(title: String? = nil, named: String? = nil, radius: CGFloat? = nil,bColor: UIColor? = nil,tColor: UIColor? = nil) {
-        if named != nil {subBtn.setImage(UIImage(named: named!), for: .normal)}
-        subBtn.setTitle(title, for: .normal)
-        subBtn.setTitleColor(tColor, for: .normal)
-        subBtn.backgroundColor = bColor
-        subBtn.contentMode = .scaleAspectFill
-        subBtn.clipsToBounds = true
-        subBtn.layer.cornerRadius = radius == nil ? 0:radius!
-        subBtn.layer.masksToBounds = true
-    }
-}
 
 //MARK: 关于 UITABLEVIEW====================
 protocol NibLoadableView: class { }

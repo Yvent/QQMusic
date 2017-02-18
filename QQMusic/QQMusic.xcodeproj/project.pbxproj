@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421570B01E554E6F004D4A4F /* SuperHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421570AF1E554E6F004D4A4F /* SuperHomeVC.swift */; };
+		421570B21E554F20004D4A4F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421570B11E554F20004D4A4F /* HomeVC.swift */; };
+		421570B51E5574DA004D4A4F /* MineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421570B41E5574DA004D4A4F /* MineVC.swift */; };
+		421570B71E557540004D4A4F /* MusicPavilionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421570B61E557540004D4A4F /* MusicPavilionVC.swift */; };
+		421570B91E55757C004D4A4F /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421570B81E55757C004D4A4F /* DiscoverVC.swift */; };
+		421570BE1E558437004D4A4F /* MineHeadImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421570BD1E558437004D4A4F /* MineHeadImageCell.swift */; };
+		421570C01E55F9A1004D4A4F /* QQMusicTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421570BF1E55F9A1004D4A4F /* QQMusicTabbar.swift */; };
+		42E607061E56BED300E6FA02 /* MiniplayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E607051E56BED300E6FA02 /* MiniplayerCell.swift */; };
 		63D4B3E61E549A3900FA2B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4B3E51E549A3900FA2B4E /* AppDelegate.swift */; };
 		63D4B3ED1E549A3900FA2B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D4B3EC1E549A3900FA2B4E /* Assets.xcassets */; };
 		63D4B3F01E549A3900FA2B4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D4B3EE1E549A3900FA2B4E /* LaunchScreen.storyboard */; };
@@ -23,6 +31,14 @@
 		20C1C82301C765873A05A680 /* Pods-QQMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-QQMusic/Pods-QQMusic.release.xcconfig"; sourceTree = "<group>"; };
 		236DEDD566C4DC29D08B4963 /* Pods-QQMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QQMusic/Pods-QQMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		3C00C46337BB6487E780F2FA /* Pods_QQMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QQMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		421570AF1E554E6F004D4A4F /* SuperHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperHomeVC.swift; sourceTree = "<group>"; };
+		421570B11E554F20004D4A4F /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		421570B41E5574DA004D4A4F /* MineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineVC.swift; sourceTree = "<group>"; };
+		421570B61E557540004D4A4F /* MusicPavilionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPavilionVC.swift; sourceTree = "<group>"; };
+		421570B81E55757C004D4A4F /* DiscoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
+		421570BD1E558437004D4A4F /* MineHeadImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineHeadImageCell.swift; sourceTree = "<group>"; };
+		421570BF1E55F9A1004D4A4F /* QQMusicTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicTabbar.swift; sourceTree = "<group>"; };
+		42E607051E56BED300E6FA02 /* MiniplayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniplayerCell.swift; sourceTree = "<group>"; };
 		63D4B3E21E549A3900FA2B4E /* QQMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D4B3E51E549A3900FA2B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D4B3EC1E549A3900FA2B4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +64,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		421570B31E555C3D004D4A4F /* home */ = {
+			isa = PBXGroup;
+			children = (
+				421570BC1E5583F1004D4A4F /* 发现 */,
+				421570BB1E5583E7004D4A4F /* 音乐库 */,
+				421570BA1E5583D9004D4A4F /* 我的 */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		421570BA1E5583D9004D4A4F /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				421570B41E5574DA004D4A4F /* MineVC.swift */,
+				421570BD1E558437004D4A4F /* MineHeadImageCell.swift */,
+			);
+			name = "我的";
+			sourceTree = "<group>";
+		};
+		421570BB1E5583E7004D4A4F /* 音乐库 */ = {
+			isa = PBXGroup;
+			children = (
+				421570B61E557540004D4A4F /* MusicPavilionVC.swift */,
+			);
+			name = "音乐库";
+			sourceTree = "<group>";
+		};
+		421570BC1E5583F1004D4A4F /* 发现 */ = {
+			isa = PBXGroup;
+			children = (
+				421570B81E55757C004D4A4F /* DiscoverVC.swift */,
+			);
+			name = "发现";
+			sourceTree = "<group>";
+		};
+		42E607041E56BE9C00E6FA02 /* miniplayer */ = {
+			isa = PBXGroup;
+			children = (
+				421570BF1E55F9A1004D4A4F /* QQMusicTabbar.swift */,
+				42E607051E56BED300E6FA02 /* MiniplayerCell.swift */,
+			);
+			name = miniplayer;
+			sourceTree = "<group>";
+		};
 		63D4B3D91E549A3900FA2B4E = {
 			isa = PBXGroup;
 			children = (
@@ -69,9 +129,12 @@
 		63D4B3E41E549A3900FA2B4E /* QQMusic */ = {
 			isa = PBXGroup;
 			children = (
+				42E607041E56BE9C00E6FA02 /* miniplayer */,
+				421570B31E555C3D004D4A4F /* home */,
 				63D4B3F71E549BA100FA2B4E /* tools */,
 				63D4B3E51E549A3900FA2B4E /* AppDelegate.swift */,
 				63D4B4021E54AC0600FA2B4E /* MainVC.swift */,
+				421570AF1E554E6F004D4A4F /* SuperHomeVC.swift */,
 				63D4B3EC1E549A3900FA2B4E /* Assets.xcassets */,
 				63D4B3EE1E549A3900FA2B4E /* LaunchScreen.storyboard */,
 				63D4B3F11E549A3900FA2B4E /* Info.plist */,
@@ -82,6 +145,7 @@
 		63D4B3F71E549BA100FA2B4E /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				421570B11E554F20004D4A4F /* HomeVC.swift */,
 				63D4B4001E549BE600FA2B4E /* ZGlobal.swift */,
 				63D4B3F81E549BB900FA2B4E /* Network.swift */,
 				63D4B3FA1E549BC700FA2B4E /* CustomProtocols.swift */,
@@ -231,13 +295,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421570B71E557540004D4A4F /* MusicPavilionVC.swift in Sources */,
+				421570BE1E558437004D4A4F /* MineHeadImageCell.swift in Sources */,
 				63D4B3FF1E549BDC00FA2B4E /* SubClass.swift in Sources */,
+				421570C01E55F9A1004D4A4F /* QQMusicTabbar.swift in Sources */,
+				421570B51E5574DA004D4A4F /* MineVC.swift in Sources */,
 				63D4B4011E549BE600FA2B4E /* ZGlobal.swift in Sources */,
 				63D4B3FB1E549BC700FA2B4E /* CustomProtocols.swift in Sources */,
+				421570B21E554F20004D4A4F /* HomeVC.swift in Sources */,
 				63D4B3F91E549BB900FA2B4E /* Network.swift in Sources */,
+				42E607061E56BED300E6FA02 /* MiniplayerCell.swift in Sources */,
 				63D4B3E61E549A3900FA2B4E /* AppDelegate.swift in Sources */,
+				421570B01E554E6F004D4A4F /* SuperHomeVC.swift in Sources */,
 				63D4B3FD1E549BD100FA2B4E /* UIExtension.swift in Sources */,
 				63D4B4031E54AC0600FA2B4E /* MainVC.swift in Sources */,
+				421570B91E55757C004D4A4F /* DiscoverVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +425,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6DVDU22WC2;
 				INFOPLIST_FILE = QQMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZYW.QQMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -367,6 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6DVDU22WC2;
 				INFOPLIST_FILE = QQMusic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZYW.QQMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";

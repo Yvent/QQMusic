@@ -86,6 +86,26 @@ extension UILabel{
     }
     
 }
+
+extension UIImageView{
+    convenience init(zyw_named named: String,
+                     rd: CGFloat = 0,
+                     bc: UIColor = RGB(33, G: 176, B: 89),
+                     bdc: CGColor = UIColor.red.cgColor,
+                     bdw: CGFloat = 0) {
+        self.init()
+        self.image = UIImage(named: named)
+        self.backgroundColor = bc
+        self.contentMode = .scaleAspectFill
+        self.clipsToBounds = true
+        self.layer.cornerRadius = rd
+        self.layer.masksToBounds = true
+        self.layer.borderColor = bdc
+        self.layer.borderWidth = bdw
+        
+    }
+
+}
 extension UITextField {
     convenience init(zyw_pl pl: String = "Placeholder",
                      plc: UIColor = UIColor.red,
@@ -110,15 +130,41 @@ extension UITextField {
         
     }
 }
+let HomeSubviewHeight = ScreenHeight - 64 - 49
+
+extension UIScrollView {
+
+    
+    convenience init(zyw_bc bc: UIColor =  RGB(33, G: 176, B: 89),
+                     any: Any,
+                     isP: Bool = false,cs: CGSize = CGSize(width: ScreenWidth * 3,height: HomeSubviewHeight)) {
+        self.init()
+        self.backgroundColor = bc
+        self.delegate = any as? UIScrollViewDelegate
+        self.isPagingEnabled = isP
+        self.scrollsToTop = false
+        self.showsHorizontalScrollIndicator = false
+        self.showsVerticalScrollIndicator = false
+        self.contentSize = cs
+        
+    }
+
+    
+  
+
+
+
+
+}
 extension UITableView{
     
     convenience init(zyw_bc bc: UIColor = RGB(33, G: 176, B: 89),
                      any: Any,
-                     rh: CGFloat = 50,style: UITableViewCellSeparatorStyle = .singleLine) {
-        self.init()
+                     rh: CGFloat = 50,tabstyle: UITableViewStyle = .plain,style: UITableViewCellSeparatorStyle = .singleLine) {
+        self.init(frame: CGRect.zero, style: tabstyle)
         self.separatorStyle = style
         self.backgroundColor = bc
-        self.tableFooterView = UIView()
+//        self.tableHeaderView = UIView(frame: CGRect.zero)
         self.rowHeight = rh
         self.delegate = any as? UITableViewDelegate
         self.dataSource = any as? UITableViewDataSource
@@ -130,11 +176,14 @@ extension UICollectionView{
     
     convenience init(zyw_bc bc: UIColor =  RGB(33, G: 176, B: 89),
                      any: Any,
-                     isP: Bool = false) {
-        self.init()
+                     isP: Bool = false,layout: UICollectionViewLayout) {
+        
+        self.init(frame: CGRect.zero, collectionViewLayout: layout)
         self.backgroundColor = bc
         self.dataSource = any as? UICollectionViewDataSource
         self.delegate = any as? UICollectionViewDelegate
+        self.showsVerticalScrollIndicator = false
+        self.showsHorizontalScrollIndicator = false
         self.isPagingEnabled = isP
         
     }
@@ -144,13 +193,13 @@ extension UICollectionView{
 extension UICollectionViewFlowLayout{
     
     convenience init(zyw_si si: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0),
-                     sd: UICollectionViewScrollDirection = .horizontal,
+                     sd: UICollectionViewScrollDirection? = nil,
                      mls: CGFloat = 0,
                      mis: CGFloat = 0,
                      ise: CGSize = CGSize(width: 50, height: 50) ) {
         self.init()
         self.sectionInset = si
-        self.scrollDirection =  sd
+        self.scrollDirection = sd == nil ? .horizontal : sd!
         self.minimumLineSpacing = mls
         self.minimumInteritemSpacing = mis
         self.itemSize = ise
