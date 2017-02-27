@@ -20,7 +20,7 @@ class ZYW_BackView: UIView{
     var rightitem: UIButton = UIButton()
     
     
-    init(zyw_bc bc: UIColor = ZYW_BC,any: Any,title: String = "ZYW_BackView",centerlefttitle: String? = nil,centerrighttitle: String? = nil,lefttitle: String? = nil,righttitle: String? = nil) {
+    init(yv_bc bc: UIColor = YV_BC,any: Any,title: String = "ZYW_BackView",centerlefttitle: String? = nil,centerrighttitle: String? = nil,lefttitle: String? = nil,righttitle: String? = nil) {
         super.init(frame: CGRect.zero)
         self.delegate = any as? ZYWBackViewDelegate
         addBackViewToVC()
@@ -35,7 +35,7 @@ class ZYW_BackView: UIView{
     func addBackViewToVC() {
         self.delegate.zywsetBackView(backView: self)
     }
-    func initBackview(zyw_bc bc: UIColor = ZYW_BC,title: String = "ZYW_BackView",centerlefttitle: String? = nil,centerrighttitle: String? = nil,lefttitle: String? = nil,righttitle: String? = nil) {
+    func initBackview(zyw_bc bc: UIColor = YV_BC,title: String = "ZYW_BackView",centerlefttitle: String? = nil,centerrighttitle: String? = nil,lefttitle: String? = nil,righttitle: String? = nil) {
         backgroundColor = bc
         centeritem.setTitle(title, for: .normal)
         addSubview(centeritem)

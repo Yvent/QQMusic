@@ -32,7 +32,7 @@ class MineVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         // Dispose of any resources that can be recreated.
     }
     private func initUI() {
-        tabv = UITableView(zyw_bc: RGBSingle(229), any: self,tabstyle: .grouped)
+        tabv = UITableView(yv_bc: RGBSingle(229), any: self,tabstyle: .grouped)
         tabv.register(UITableViewCell.self)
         
         view.addSubview(tabv)

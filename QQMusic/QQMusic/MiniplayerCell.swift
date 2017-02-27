@@ -23,26 +23,26 @@ class MiniplayerCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     private func initUI() {
-        imagev =   UIImageView(zyw_named: "7B9F2B84-052E-4575-9EEE-80892FCECB24", rd: TabbarHeight/2)
-        title = UILabel(zyw_lt: "凉凉", ltc: UIColor.black, ts: 16, alg: .center)
-        subtitle = UILabel(zyw_lt: "张碧晨/杨宗纬", ltc: UIColor.black, ts: 12, alg: .center)
+        imagev = UIImageView()
+        UIImage(named: "7B9F2B84-052E-4575-9EEE-80892FCECB24")?.yv_asyncDrawImage(size: CGSize(width: ScreenWidth, height: ScreenWidth), isCorner: true, backColor: nil,finished: { (image) in
+            self.imagev.image = image
+        })
+        
+        title = UILabel(yv_lt: "凉凉", ltc: UIColor.black, ts: 16, alg: .left)
+        subtitle = UILabel(yv_lt: "张碧晨/杨宗纬", ltc: UIColor.black, ts: 12, alg: .left)
         contentView.addSubviews([imagev,title,subtitle])
         
-        imagev.snp.makeConstraints { (make) in
-            make.left.equalTo(contentView).offset(5)
-            make.centerY.equalTo(contentView)
-            make.width.height.equalTo(TabbarHeight)
-            
-        }
-        title.snp.makeConstraints { (make) in
-            make.left.equalTo(imagev.snp.right).offset(10)
-            make.bottom.equalTo(imagev.snp.centerY)
-        }
-        subtitle.snp.makeConstraints { (make) in
-            make.left.equalTo(title)
-            make.top.equalTo(imagev.snp.centerY)
-        }
+
+        imagev.frame = CGRect(x: 5, y: 0, width: TabbarHeight, height: TabbarHeight)
+        title.frame = CGRect(x: 70, y: 5, width: self.frame.size.width - TabbarHeight - 10, height: TabbarHeight/3)
+        subtitle.frame = CGRect(x: 70, y: TabbarHeight * 2/3 , width: self.frame.size.width - TabbarHeight - 10, height: TabbarHeight/3)
+
         
     }
+    
+
 }
+
+
+
 

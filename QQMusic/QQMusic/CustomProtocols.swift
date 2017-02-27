@@ -85,52 +85,5 @@ extension UITableView {
 }
 
 
-protocol TableViewFolding { }
 
-
-
-class HeaderForSection: UIView {
-  
-//     var didSelect: (()->())?
-    var inSection = 0
-    var isCurrentOen = false
-    
-    var didSelect: (_ zind: Int) -> () = { _ in }
-    
-    init(InSection: Int) {
-       super.init(frame: CGRect.zero)
-        inSection = InSection
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(HeaderForSection.onTapped))
-        self.addGestureRecognizer(tapGesture)
-    }
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(HeaderForSection.onTapped))
-//       self.addGestureRecognizer(tapGesture)
-//    }
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    func onTapped() {
-    
-       didSelect(inSection)
-    }
-}
-extension UITableViewDelegate {
-
-    func folding(tableView: UITableView, viewForHeaderInSection: Int) {
-        
-        let  v =  self.tableView!(tableView, viewForHeaderInSection: viewForHeaderInSection) as! HeaderForSection
-        v.didSelect = {(_ cind: Int)  in
-
-        print("aaa")
-            
-            
-            
-        }
-    
-        
-    }
-    
-}
 

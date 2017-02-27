@@ -42,19 +42,10 @@ class HomeVC: UIViewController,ZYWBackViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        
-        let vc = UIViewController()
-        vc.view.backgroundColor = UIColor.white
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
     
     private func initUI(){
-        topV = ZYW_BackView(zyw_bc: NAVBC, any: self, title: "音乐库",centerlefttitle:"我的",centerrighttitle: "发现", lefttitle: "菜单", righttitle: "识曲")
-        ContentView = UIScrollView(zyw_bc: UIColor.white, any: self, isP: true)
+        topV = ZYW_BackView(yv_bc: NAVBC, any: self, title: "音乐库",centerlefttitle:"我的",centerrighttitle: "发现", lefttitle: "菜单", righttitle: "识曲")
+        ContentView = UIScrollView(yv_bc: UIColor.white, any: self, isP: true)
         view.addSubview(ContentView)
         ContentView.snp.makeConstraints { (make) in
             make.left.right.bottom.equalTo(view)

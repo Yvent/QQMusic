@@ -14,6 +14,9 @@
 		421570B91E55757C004D4A4F /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421570B81E55757C004D4A4F /* DiscoverVC.swift */; };
 		421570BE1E558437004D4A4F /* MineHeadImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421570BD1E558437004D4A4F /* MineHeadImageCell.swift */; };
 		421570C01E55F9A1004D4A4F /* QQMusicTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421570BF1E55F9A1004D4A4F /* QQMusicTabbar.swift */; };
+		422268551E5DA4A20094B2AC /* MiniPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422268541E5DA4A20094B2AC /* MiniPlayerView.swift */; };
+		42937BD51E5FE3BB000CCCD0 /* YVMusicTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42937BD41E5FE3BB000CCCD0 /* YVMusicTool.swift */; };
+		42937BD81E5FE7BB000CCCD0 /* 06 Talk Love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 42937BD71E5FE7BB000CCCD0 /* 06 Talk Love.mp3 */; };
 		42E607061E56BED300E6FA02 /* MiniplayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E607051E56BED300E6FA02 /* MiniplayerCell.swift */; };
 		63D4B3E61E549A3900FA2B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4B3E51E549A3900FA2B4E /* AppDelegate.swift */; };
 		63D4B3ED1E549A3900FA2B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D4B3EC1E549A3900FA2B4E /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 		421570B81E55757C004D4A4F /* DiscoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
 		421570BD1E558437004D4A4F /* MineHeadImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineHeadImageCell.swift; sourceTree = "<group>"; };
 		421570BF1E55F9A1004D4A4F /* QQMusicTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicTabbar.swift; sourceTree = "<group>"; };
+		422268541E5DA4A20094B2AC /* MiniPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniPlayerView.swift; sourceTree = "<group>"; };
+		42937BD41E5FE3BB000CCCD0 /* YVMusicTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YVMusicTool.swift; sourceTree = "<group>"; };
+		42937BD71E5FE7BB000CCCD0 /* 06 Talk Love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 Talk Love.mp3"; sourceTree = "<group>"; };
 		42E607051E56BED300E6FA02 /* MiniplayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniplayerCell.swift; sourceTree = "<group>"; };
 		63D4B3E21E549A3900FA2B4E /* QQMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D4B3E51E549A3900FA2B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,11 +105,20 @@
 			name = "发现";
 			sourceTree = "<group>";
 		};
+		42937BD61E5FE794000CCCD0 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				42937BD71E5FE7BB000CCCD0 /* 06 Talk Love.mp3 */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
 		42E607041E56BE9C00E6FA02 /* miniplayer */ = {
 			isa = PBXGroup;
 			children = (
 				421570BF1E55F9A1004D4A4F /* QQMusicTabbar.swift */,
 				42E607051E56BED300E6FA02 /* MiniplayerCell.swift */,
+				422268541E5DA4A20094B2AC /* MiniPlayerView.swift */,
 			);
 			name = miniplayer;
 			sourceTree = "<group>";
@@ -129,6 +144,7 @@
 		63D4B3E41E549A3900FA2B4E /* QQMusic */ = {
 			isa = PBXGroup;
 			children = (
+				42937BD61E5FE794000CCCD0 /* resource */,
 				42E607041E56BE9C00E6FA02 /* miniplayer */,
 				421570B31E555C3D004D4A4F /* home */,
 				63D4B3F71E549BA100FA2B4E /* tools */,
@@ -151,6 +167,7 @@
 				63D4B3FA1E549BC700FA2B4E /* CustomProtocols.swift */,
 				63D4B3FC1E549BD100FA2B4E /* UIExtension.swift */,
 				63D4B3FE1E549BDC00FA2B4E /* SubClass.swift */,
+				42937BD41E5FE3BB000CCCD0 /* YVMusicTool.swift */,
 			);
 			name = tools;
 			sourceTree = "<group>";
@@ -236,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D4B3F01E549A3900FA2B4E /* LaunchScreen.storyboard in Resources */,
+				42937BD81E5FE7BB000CCCD0 /* 06 Talk Love.mp3 in Resources */,
 				63D4B3ED1E549A3900FA2B4E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +317,7 @@
 				421570BE1E558437004D4A4F /* MineHeadImageCell.swift in Sources */,
 				63D4B3FF1E549BDC00FA2B4E /* SubClass.swift in Sources */,
 				421570C01E55F9A1004D4A4F /* QQMusicTabbar.swift in Sources */,
+				422268551E5DA4A20094B2AC /* MiniPlayerView.swift in Sources */,
 				421570B51E5574DA004D4A4F /* MineVC.swift in Sources */,
 				63D4B4011E549BE600FA2B4E /* ZGlobal.swift in Sources */,
 				63D4B3FB1E549BC700FA2B4E /* CustomProtocols.swift in Sources */,
@@ -308,6 +327,7 @@
 				63D4B3E61E549A3900FA2B4E /* AppDelegate.swift in Sources */,
 				421570B01E554E6F004D4A4F /* SuperHomeVC.swift in Sources */,
 				63D4B3FD1E549BD100FA2B4E /* UIExtension.swift in Sources */,
+				42937BD51E5FE3BB000CCCD0 /* YVMusicTool.swift in Sources */,
 				63D4B4031E54AC0600FA2B4E /* MainVC.swift in Sources */,
 				421570B91E55757C004D4A4F /* DiscoverVC.swift in Sources */,
 			);

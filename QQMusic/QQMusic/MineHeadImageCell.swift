@@ -35,9 +35,9 @@ class MineHeadImageCell: UITableViewCell ,UICollectionViewDelegate, UICollection
     }
     func initUI() {
         headimagebtn = UIButton( nn: "",rd: headheight/2)
-        mintuesbtn = UIButton(zyw_nt: "0分钟", ntc: UIColor.black, nn: "", ts: 14, rd: headheight/4, bc: UIColor.white, bdc: RGBSingle(217).cgColor, bdw: 1)
-        becomevipbtn = UIButton(zyw_nt: "开通", ntc: UIColor.black, nn: "", ts: 14, rd: headheight/4, bc: UIColor.white, bdc: RGBSingle(217).cgColor, bdw: 1)
-        namelabel = UILabel(zyw_lt: "— Devil —", ltc: UIColor.black, ts: 18, alg: .center)
+        mintuesbtn = UIButton(yv_nt: "0分钟", ntc: UIColor.black, nn: "", ts: 14, rd: headheight/4, bc: UIColor.white, bdc: RGBSingle(217).cgColor, bdw: 1)
+        becomevipbtn = UIButton(yv_nt: "开通", ntc: UIColor.black, nn: "", ts: 14, rd: headheight/4, bc: UIColor.white, bdc: RGBSingle(217).cgColor, bdw: 1)
+        namelabel = UILabel(yv_lt: "— Devil —", ltc: UIColor.black, ts: 18, alg: .center)
         tovipbtn = UIButton( nn: "")
         
         addSubviews([headimagebtn,mintuesbtn,becomevipbtn,namelabel,tovipbtn])
@@ -70,7 +70,7 @@ class MineHeadImageCell: UITableViewCell ,UICollectionViewDelegate, UICollection
         
         let layout = UICollectionViewFlowLayout(sd: .vertical,mls: 0, mis: 0, ise: CGSize(width: ScreenWidth/3, height: MinePlayerFuncCellHeight/2))
         
-        contentV = UICollectionView(zyw_bc: UIColor.white, any: self,layout: layout)
+        contentV = UICollectionView(yv_bc: UIColor.white, any: self,layout: layout)
         contentView.addSubview(contentV)
         
         
