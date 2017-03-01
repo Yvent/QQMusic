@@ -15,12 +15,12 @@
 		421570BE1E558437004D4A4F /* MineHeadImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421570BD1E558437004D4A4F /* MineHeadImageCell.swift */; };
 		421570C01E55F9A1004D4A4F /* QQMusicTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421570BF1E55F9A1004D4A4F /* QQMusicTabbar.swift */; };
 		422268551E5DA4A20094B2AC /* MiniPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422268541E5DA4A20094B2AC /* MiniPlayerView.swift */; };
+		423F98A21E65338700D48414 /* MiniPlayerScrollV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F98A11E65338700D48414 /* MiniPlayerScrollV.swift */; };
 		42937BD51E5FE3BB000CCCD0 /* YVMusicTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42937BD41E5FE3BB000CCCD0 /* YVMusicTool.swift */; };
-		42937BD81E5FE7BB000CCCD0 /* 06 Talk Love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 42937BD71E5FE7BB000CCCD0 /* 06 Talk Love.mp3 */; };
+		42DF4C131E6675DC00B2C80E /* 汪晨蕊-友情岁月 (Live) (汪晨蕊胜出).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 42DF4C121E6675DC00B2C80E /* 汪晨蕊-友情岁月 (Live) (汪晨蕊胜出).mp3 */; };
 		42E607061E56BED300E6FA02 /* MiniplayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E607051E56BED300E6FA02 /* MiniplayerCell.swift */; };
 		63D4B3E61E549A3900FA2B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4B3E51E549A3900FA2B4E /* AppDelegate.swift */; };
 		63D4B3ED1E549A3900FA2B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D4B3EC1E549A3900FA2B4E /* Assets.xcassets */; };
-		63D4B3F01E549A3900FA2B4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D4B3EE1E549A3900FA2B4E /* LaunchScreen.storyboard */; };
 		63D4B3F91E549BB900FA2B4E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4B3F81E549BB900FA2B4E /* Network.swift */; };
 		63D4B3FB1E549BC700FA2B4E /* CustomProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4B3FA1E549BC700FA2B4E /* CustomProtocols.swift */; };
 		63D4B3FD1E549BD100FA2B4E /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4B3FC1E549BD100FA2B4E /* UIExtension.swift */; };
@@ -42,13 +42,13 @@
 		421570BD1E558437004D4A4F /* MineHeadImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineHeadImageCell.swift; sourceTree = "<group>"; };
 		421570BF1E55F9A1004D4A4F /* QQMusicTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicTabbar.swift; sourceTree = "<group>"; };
 		422268541E5DA4A20094B2AC /* MiniPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniPlayerView.swift; sourceTree = "<group>"; };
+		423F98A11E65338700D48414 /* MiniPlayerScrollV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniPlayerScrollV.swift; sourceTree = "<group>"; };
 		42937BD41E5FE3BB000CCCD0 /* YVMusicTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YVMusicTool.swift; sourceTree = "<group>"; };
-		42937BD71E5FE7BB000CCCD0 /* 06 Talk Love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 Talk Love.mp3"; sourceTree = "<group>"; };
+		42DF4C121E6675DC00B2C80E /* 汪晨蕊-友情岁月 (Live) (汪晨蕊胜出).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "汪晨蕊-友情岁月 (Live) (汪晨蕊胜出).mp3"; sourceTree = "<group>"; };
 		42E607051E56BED300E6FA02 /* MiniplayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniplayerCell.swift; sourceTree = "<group>"; };
 		63D4B3E21E549A3900FA2B4E /* QQMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D4B3E51E549A3900FA2B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D4B3EC1E549A3900FA2B4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		63D4B3EF1E549A3900FA2B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63D4B3F11E549A3900FA2B4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63D4B3F81E549BB900FA2B4E /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		63D4B3FA1E549BC700FA2B4E /* CustomProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomProtocols.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		42937BD61E5FE794000CCCD0 /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				42937BD71E5FE7BB000CCCD0 /* 06 Talk Love.mp3 */,
+				42DF4C121E6675DC00B2C80E /* 汪晨蕊-友情岁月 (Live) (汪晨蕊胜出).mp3 */,
 			);
 			name = resource;
 			sourceTree = "<group>";
@@ -119,6 +119,7 @@
 				421570BF1E55F9A1004D4A4F /* QQMusicTabbar.swift */,
 				42E607051E56BED300E6FA02 /* MiniplayerCell.swift */,
 				422268541E5DA4A20094B2AC /* MiniPlayerView.swift */,
+				423F98A11E65338700D48414 /* MiniPlayerScrollV.swift */,
 			);
 			name = miniplayer;
 			sourceTree = "<group>";
@@ -152,7 +153,6 @@
 				63D4B4021E54AC0600FA2B4E /* MainVC.swift */,
 				421570AF1E554E6F004D4A4F /* SuperHomeVC.swift */,
 				63D4B3EC1E549A3900FA2B4E /* Assets.xcassets */,
-				63D4B3EE1E549A3900FA2B4E /* LaunchScreen.storyboard */,
 				63D4B3F11E549A3900FA2B4E /* Info.plist */,
 			);
 			path = QQMusic;
@@ -252,9 +252,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63D4B3F01E549A3900FA2B4E /* LaunchScreen.storyboard in Resources */,
-				42937BD81E5FE7BB000CCCD0 /* 06 Talk Love.mp3 in Resources */,
 				63D4B3ED1E549A3900FA2B4E /* Assets.xcassets in Resources */,
+				42DF4C131E6675DC00B2C80E /* 汪晨蕊-友情岁月 (Live) (汪晨蕊胜出).mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				421570B71E557540004D4A4F /* MusicPavilionVC.swift in Sources */,
+				423F98A21E65338700D48414 /* MiniPlayerScrollV.swift in Sources */,
 				421570BE1E558437004D4A4F /* MineHeadImageCell.swift in Sources */,
 				63D4B3FF1E549BDC00FA2B4E /* SubClass.swift in Sources */,
 				421570C01E55F9A1004D4A4F /* QQMusicTabbar.swift in Sources */,
@@ -334,17 +334,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		63D4B3EE1E549A3900FA2B4E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63D4B3EF1E549A3900FA2B4E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		63D4B3F21E549A3900FA2B4E /* Debug */ = {
@@ -443,6 +432,7 @@
 			baseConfigurationReference = 236DEDD566C4DC29D08B4963 /* Pods-QQMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 6DVDU22WC2;
 				INFOPLIST_FILE = QQMusic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -458,6 +448,7 @@
 			baseConfigurationReference = 20C1C82301C765873A05A680 /* Pods-QQMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 6DVDU22WC2;
 				INFOPLIST_FILE = QQMusic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

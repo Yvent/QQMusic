@@ -52,7 +52,7 @@ class QQMusicTabbar: UIView, UICollectionViewDelegate ,UICollectionViewDataSourc
             
             let cell = contentV.cellForItem(at:  IndexPath(row: 0, section: 0)) as! MiniplayerCell
             startAnimation(cell.imagev)
-            let path: String = Bundle.main.path(forResource: "06 Talk Love", ofType: "mp3")!
+            let path: String = Bundle.main.path(forResource: "汪晨蕊-友情岁月 (Live) (汪晨蕊胜出)", ofType: "mp3")!
             
             YVMusicTool.sharedTools.playMusic(urlString: path) { (progress) in
                 //返回进度
