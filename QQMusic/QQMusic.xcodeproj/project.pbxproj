@@ -73,6 +73,7 @@
 		421570B31E555C3D004D4A4F /* home */ = {
 			isa = PBXGroup;
 			children = (
+				421570B11E554F20004D4A4F /* HomeVC.swift */,
 				421570BC1E5583F1004D4A4F /* 发现 */,
 				421570BB1E5583E7004D4A4F /* 音乐库 */,
 				421570BA1E5583D9004D4A4F /* 我的 */,
@@ -161,7 +162,6 @@
 		63D4B3F71E549BA100FA2B4E /* tools */ = {
 			isa = PBXGroup;
 			children = (
-				421570B11E554F20004D4A4F /* HomeVC.swift */,
 				63D4B4001E549BE600FA2B4E /* ZGlobal.swift */,
 				63D4B3F81E549BB900FA2B4E /* Network.swift */,
 				63D4B3FA1E549BC700FA2B4E /* CustomProtocols.swift */,
